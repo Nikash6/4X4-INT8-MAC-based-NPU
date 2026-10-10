@@ -115,17 +115,13 @@ The integrated `QUANT_SHIFT=2` test is being finalized separately and is not inc
 - **Output:** Signed INT8 after quantization and saturation.
 
 The mathematical operation is:
+<span style="font-size: 20px;">**𝐂ᵢ,ⱼ = ∑ₖ₌₀⁷ 𝐀ᵢ,ₖ𝐁ₖ,ⱼ**</span>
 
-\[
-C_{i,j}=\sum_{k=0}^{7}A_{i,k}B_{k,j}
-\]
 
 The final output is obtained by applying the configured arithmetic right shift and limiting the result to the signed INT8 range.
 
-\[
-Y_{i,j}=\operatorname{sat}_{[-128,127]}
-\left(C_{i,j}\mathbin{\text{>>>}}s\right)
-\]
+<span style="font-size: 20px;">**𝐘ᵢ,ⱼ = sat_{[₋₁₂₈, ₁₂₇]} (𝐂ᵢ,ⱼ >>> s)**</span>
+
 
 Here, \(s\) is the quantization shift parameter.
 
