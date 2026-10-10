@@ -58,14 +58,14 @@ The external memory model supplies the input matrices through the DMA interface.
 
 ## Project Stages
 
-### Stage 1: Basic MAC and 4×4 NPU — Completed
+### Stage 1: Basic MAC and 4×4 NPU 
 
 - Developed the basic multiply-accumulate datapath.
 - Built a 4×4 matrix multiplication design.
 - Verified matrix multiplication using a Verilog testbench.
 - Checked the expected output values.
 
-### Stage 2: DMA-Integrated 8×8 INT8 NPU — Completed
+### Stage 2: DMA-Integrated 8×8 INT8 NPU
 
 #### 1. DMA Integration
 
